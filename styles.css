@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(250, 230, 1, 1);
+}
+
+/* rgb(180 202 217 1) */
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav__container {
+    background-color: rgba(180, 202, 217, 1);
+}
+
+.nav__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    width: 64px;
+    height: 64px;
+}
+
+.yellow {
+    color: rgba(250, 230, 1, 1);
+}
+
+.logo__text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    margin-left: 16px;
+    color: rgba(250, 230, 1, 1);
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin-left: 16px;
+}
+
+.nav__link--primary {
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(250, 230, 1, 1);
+    letter-spacing: 0.125rem;
+}
+
+.nav__link--wrapper {
+    margin-left: 12px;
+}
+
+.landing__container {
+    height: calc(100vh - 100px);
+    background-color: rgba(180, 202, 217, 1);
+}
+
+.landing__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing__gif--wrapper {
+    width: 60%;
+}
+
+.landing__gif {
+    width: 100%;
+}
+
+.landing__row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing__text--header {
+    color: rgba(60, 84, 118, 1);
+    font-size: 42px;
+    text-align: left;
+}
+
+.landing__text--header--two {
+    color: rgba(60, 84, 118, 1);
+    font-size: 32px;
+    text-align: left;
+    margin: 24px 0;
+}
+
+.landing__text--para {
+    font-size: 24px;
+    text-align: left;
+    color: rgba(60, 84, 118, 1);
+}
+
+/* WHITELIST INFO */
+
+#whitelist-info {
+    background-color: #C5D6E4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.info__title {
+    margin: 24px 0;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(60, 84, 118, 1);
+}
+
+.info__container {
+    display: flex;
+    align-items: center;
+}
+
+.info__img--wrapper {
+    width: 50%;
+}
+
+.info__img {
+    width: 100%;
+}
+
+.info__text--container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: rgba(60, 84, 118, 1);
+}
+
+.info__text--container:last-child {
+    margin-bottom: 32px;
+}
+
+.list__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgba(250, 230, 1, 1);
+}
+
+.list__description {
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.whitelist-info__list {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+
+.info__item {
+    width: 75%;
+}
+
+.info__list--item {
+    margin-bottom: 8px;
+}
+
+.info__list--item--title {
+    margin-bottom: 4px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(180, 202, 217, 1);
+    height: 150px;
+    justify-content: space-evenly;
+}
+
+
+.socials-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-list__item {
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+
+.footer__header {
+    color: rgba(60, 84, 118, 1);
+    font-size: 24px;
+}
+
+.footer__header--two {
+    color: rgba(60, 84, 118, 1);
+    font-size: 20px;
+}
+
+/* Small phones, tablets, large smartphones */
+@media(max-width: 768px) {
+    .nav__row {
+        max-width: 800px;
+    }
+
+    .logo__text {
+        display: none;
+    }
+
+    .landing__text--header {
+        text-align: center;
+    }
+
+    .landing__text--header--two {
+        text-align: center;
+    }
+
+    .landing__text--para {
+        text-align: center;
+    }
+
+    .row {
+        max-width: 800px;
+    }
+
+    .info__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info__img--wrapper {
+        width: 400px;
+        height: 400px;
+    }
+
+    .info__item {
+        width: 100%;
+    }
+}
+
+/* Small Phones */
+@media(max-width: 480px){
+
+    .landing__gif--wrapper {
+        display: none;
+    }
+
+    .landing__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .landing__text {
+        width: 100%;
+    }
+}
